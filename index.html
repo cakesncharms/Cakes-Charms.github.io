@@ -14,62 +14,37 @@
 <body>
      <!------Header Part ------>
 <header>
-<nav class="navbar container" id="" >
-    
-<div class="logo" id="logo">
-    <img src="images/logo.png.PNG" >
-            
-        </a>
+  <nav class="navbar container" role="navigation" aria-label="Primary Navigation">
+    <div class="logo" id="logo">
+      <a href="#"><img src="images/logo.png.PNG" alt="Cakes & Charms Logo"></a>
     </div>
-    <ul class="navlist">
-        <li>
-            <a href="#" class="navlinks active">Home
+    
+    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-menu">
+      <span class="burger"></span>
+      <span class="burger"></span>
+      <span class="burger"></span>
+    </button>
 
-            </a>
-
-        </li>
-
-        <li>
-            <a href="#About" class="navlinks">About</a>
-        </li>
-
-        <li>
-            <a href="#Menu" class="navlinks">Menu</a>
-        </li>
-
-        <li>
-            <a href="#Featured Cakes" class="navlinks"> Featured Cakes</a>
-        </li>
-
-       
-        <li>
-            <a href="#Contact Us" class="navlinks">Contact Us</a>
-        </li>
-
-        
-        <div class="btn-container">
-  <button onclick="window.location.href='tel:+918758750304'">Call Us: 875 875 03 04</button>
-</div>
-
+    <ul class="navlist" id="primary-menu">
+      <li><a href="#" class="navlinks active" aria-current="page">Home</a></li>
+      <li><a href="#About" class="navlinks">About</a></li>
+      <li><a href="#Menu" class="navlinks">Menu</a></li>
+      <li><a href="#Featured Cakes" class="navlinks">Featured Cakes</a></li>
+      <li><a href="#Contact Us" class="navlinks">Contact Us</a></li>
+      <li><a href="#Order Now" class="navlinks">Order Now</a></li>
     </ul>
 
-    <div class="nav-icons">
-    <a href="#" class="icons-link">
-    <i class="fa-solid fa-user"></i> 
-    </a>
-
-    <a href="#"class="icons-link">
-    <i class="fa-solid fa-cart-shopping"></i>
-    </a>
+    <div class="btn-container hide-on-mobile">
+      <button onclick="window.location.href='tel:+918758750304'">Call Us: 875 875 03 04</button>
     </div>
-    
-<div class="hamburger">
-    <div class="burger"></div>
-    <div class="burger"></div>
-    <div class="burger"></div>
 
-</div>
-</nav>
+    <div class="nav-icons hide-on-mobile">
+      <a href="#" class="icons-link" aria-label="User Account"><i class="fa-solid fa-user"></i></a>
+      <a href="#" class="icons-link" aria-label="Shopping Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+  </nav>
+</header>
+
 
 </header>
 
